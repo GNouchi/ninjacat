@@ -1,0 +1,39 @@
+.container{
+    background: linear-gradient(grey,white,grey,white,grey);
+    padding:50px;
+    height: 600px;
+    width: 185px;;
+    display: inline-block;
+    vertical-align: top;
+    border-radius:8px;
+}
+img{
+    display: block;
+}
+.middle{
+    width: 180px;
+    height: 25px;
+    background: teal;
+    color: white;
+    text-align: center;
+}
+.btncont{
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px;
+    width: 300px;
+    background: linear-gradient(grey,white,grey);
+    padding: 25px;
+    border-radius:8px;
+}
+    .btncont button{
+        width: 100px auto;
+        margin: 20px;
+        font-size: 26px;
+        border:1px inset blue;
+        box-shadow: 5px 3px 2px blue;
+        border-radius:8px;
+    }
+    .btncont p {
+        margin: 5px;
+    }

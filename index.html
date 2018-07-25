@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        $(document).ready(function() {
+            $('.hide').hide();
+            $('.container div').click(function(){
+                $(this.children).toggle();
+            })
+            $('.flipAll').click(function(){
+                $(".container div").children().toggle();
+            })
+        });
+        </script>
+        <title>ninjacat</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <img src='ninja0.png' class = "hide"> <!--row1-->
+                <img src='cat0.png' > <!--row6-->
+            </div>
+            <div>
+                <img src='ninja1.png' > <!--row2-->
+                <img src='cat1.png' class = "hide"> <!--row7-->
+            </div>
+            <div>
+                <img src='ninja2.png' class = "hide"> <!--row3-->
+                <img src='cat2.png'> <!--row8-->
+            </div>
+            <div>
+                <img src='ninja3.png'> <!--row4-->
+                <img src='cat3.png' class = "hide"> <!--row9-->
+            </div>
+            <div>
+                <img src='ninja4.png'class = "hide"> <!--row5-->
+                <img src='cat4.png'> <!--row10-->
+            </div>
+        </div>
+        <button class ="flipAll"> Flip All </button>
+    </body>
+</html>

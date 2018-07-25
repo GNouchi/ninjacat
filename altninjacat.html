@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="altninjacat.css">
+        <title>Ninja to Cat</title>
+        <script>
+            var mode;
+        $(document).ready(function(){
+            // change mode
+            $('*').click(function() {
+                $('p').hide();
+            });
+
+            $('.after').click(function() {
+                mode = "after";
+                $('.middle').text("mode");
+            });
+            $('.before').click(function() {
+                mode = "before"
+                $('.middle').text(mode);
+            });
+
+            //move pic
+            $('img').click(function() {
+                    if (mode=="before") {
+                        $('.middle').before(this);}
+                    if (mode=="after") {
+                        $('.middle').after(this);}}
+                );
+        });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <img src='ninja0.png' class = "ninja0"> <!--row1-->
+            <img src='ninja2.png' class = "ninja2"> <!--row3-->
+            <img src='cat3.png' class = "cat3"> <!--row9-->
+            <img src='cat4.png' class = "cat4"> <!--row10-->
+            <div class="middle">
+            </div>
+            <img src='ninja1.png' class = "ninja1"> <!--row2-->
+            <img src='cat0.png' class = "ninja0"> <!--row6-->
+            <img src='ninja3.png' class = "ninja3"> <!--row4-->
+            <img src='cat1.png' class = "cat1"> <!--row7-->
+            <img src='ninja4.png'class = "ninja4"> <!--row5-->
+            <img src='cat2.png'class = "cat2"> <!--row8-->
+        </div>
+        <div class="btncont">
+            <button class= "after"> after(-) </button>
+            <button class= "before"> before(+) </button>
+            <p> Buttons change modes to move images either Before or After the Middle Div</p>
+        </div>
+    </body>
+</html>
